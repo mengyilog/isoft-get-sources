@@ -1,0 +1,18 @@
+#================================================================
+#   Copyright (C) 2015 All rights reserved.
+#
+#   filename:isoft_get_sources.sh
+#   author:sulit sulitsrc@163.com
+#   modify date,time:2015-07-29 10:52
+#   discription:
+#
+#================================================================
+
+#!/bin/sh
+
+if [[ $1 == *.spec ]];
+then
+	spectool -g $1
+else
+	spectool -g *.spec
+fi
